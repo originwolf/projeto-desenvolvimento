@@ -1,0 +1,81 @@
+th {
+	font-size: 14px;
+}
+
+td {
+	font-size: 13px;
+}
+
+.menu {
+	font-size: 14px;
+}
+
+.bg-cinza{	
+	background-color: #dfdfdf;
+}
+
+.cabecalho{	
+	background-color: #dfdfdf;
+	background-image: url(../images/auditorio2.jpg);
+	background-repeat: no-repeat; 
+   	padding:  250px 0px;
+   	background-attachment: fixed;
+}
+
+.titulo{
+	font-size: 40px;	
+	font-weight: bold;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.botao{
+	width: 120px;
+	margin: 10px;
+}
+
+.botao-pequeno{
+	font-size: 11px;
+	width: 50px;
+}
+
+.rotulo-tabela{
+	font-size: 14px;
+}
+
+.icone_campo input{
+	padding-left:50px;
+}
+
+.icone_campo select{
+	padding-left:50px;	
+}
+
+.icone_campo{
+	position:relative;
+}
+
+.icone_campo i{
+	position:absolute;
+	left:0;
+	top:30px;
+	padding:12px 13px;
+	color:#aaa;
+	transition:.3s;
+}
+
+.icone_campo input:focus + i{
+	color:dodgerBlue;
+}
+
+.icone_campo.icone_campo_bg i{
+	background-color:#aaa;
+	color:#fff;
+	padding:11px 30px 11px 15px;
+	border-radius:4px 0 0 4px;
+}
+
+.icone_campo.icone_campo_bg input:focus + i{
+	color:#fff;
+	background-color:dodgerBlue;
+}
