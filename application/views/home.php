@@ -52,6 +52,7 @@ case 'home': ?>
         <div class="row">
           <div class="col-lg-12 mx-auto"> 
           <section id="SobreNos" class="row">
+          <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
 				<div class="col-md-5 text-center">
 						<img src="assets/images/imagem1.jpg" alt=""class="py-2" style="width:300; height:317px;">
 				</div>
@@ -62,19 +63,20 @@ case 'home': ?>
             O SISCONEVE foi desenvolvido para facilitar a organização de inscrições, palestras, minicursos, workshops, cursos, entre outras 
             atividades de eventos técnicos e científicos.</p>
 				</div>
-                        
+        <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>        
           </div>
         </div>
       </div>
     </section>
-
+    
+			
     <section id="contato" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 mx-auto">
-            <h2 class="text-center mb-5">Contate-nos</h2>
-            <p class="lead my-5">Este sistema encontra-se em desenvolvimento. Caso ocorra erro(s) durante sua navegação e ou inscrição, pedimos por gentileza, por favor reportar aos desenvolvedores, se possível com o(s) print(s) do(s) erro(s):</p>
-
+          <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
+            <h2 class="text-center mb-5">ENTRE EM CONTATO</h2>
+            
             <div class="row">
               <div class="col-sm-6">
                 <div class="card mt-4 mb-4 shadow">
@@ -82,7 +84,7 @@ case 'home': ?>
                     Denis Antonio Rocha
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;&nbsp;(35) 9 8875-1516</p>
+                    <p class="card-text"><i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=5535988751516&text=Oi%20Denis%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 8875-1516</a></p>
                     <p class="card-text"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;denisantoniorocha@gmail.com</p>
                     <p class="card-text"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">www.facebook.com/denisantonio.rocha</a></p>                
                   </div>
@@ -94,13 +96,15 @@ case 'home': ?>
                     Jéssica Alves de Lima Venâncio
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;&nbsp;(35) 9 9747-3184</p>
+                    <p class="card-text"><i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5535997473184&text=Oi%20J%C3%A9ssica%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 9747-3184</a></p>
                     <p class="card-text"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;jlimavenancio@outlook.com</p>
                     <p class="card-text"><i class="fab fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">www.facebook.com/jessica.venancio.399</a></p>                
                   </div>
                 </div>           
               </div>
             </div>
+            <p class="lead my-5">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato conosco, se possível com o(s) print(s) do(s) erro(s).</p>
+            <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
           </div>
         </div>
       </div>
