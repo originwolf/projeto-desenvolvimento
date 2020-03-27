@@ -50,10 +50,19 @@ case 'home': ?>
     <section id="sobre">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto">            
-            <h2 class="text-center p-2">SOBRE O IF EVENTOS</h2>
-            <p>O IFEVENTOS é um sistema criado para gestão de eventos acadêmicos realizados no Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas - Campus Machado. A plataforma permite a automatização de processos que simplificam a forma de administrar todas as etapas dos eventos realizados através de
-            ferramentas para facilitar inscrição, organização de palestras, workshops, cursos e qualquer outro tipo de atividade que de eventos técnicos e/ou científicos.</p>                   
+          <div class="col-lg-12 mx-auto"> 
+          <section id="SobreNos" class="row">
+				<div class="col-md-5 text-center">
+						<img src="assets/images/imagem1.jpg" alt=""class="py-2" style="width:300; height:317px;">
+				</div>
+				<div class="col-md-6">
+        <h1 class="mt-4 mb-3 pl-4">SOBRE O SISCONEVE</h1>
+					<p class="text-justify col-12 pl-4">Nosso sistema foi projetado para atender as demandas dos eventos realizados dentro do IFSULDEMINAS - Campus Machado. 
+            A plataforma permite a automatização de processos que simplificam a forma de administrar todas as etapas do eventos. 
+            O SISCONEVE foi desenvolvido para facilitar a organização de inscrições, palestras, minicursos, workshops, cursos, entre outras 
+            atividades de eventos técnicos e científicos.</p>
+				</div>
+                        
           </div>
         </div>
       </div>
