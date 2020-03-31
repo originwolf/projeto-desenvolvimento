@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Sistema Controlador de Eventos">
     <meta name="author" content="Denis Antonio Rocha & Jéssica Alves venâncio">
-    <title>sisconeve</title>
+    <title>Sisconeve</title>
     <!--LINKS BOOSTRAP, JAVA SCRIPT E CSS-->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">  
     <link href="<?php echo base_url('assets/css/scrolling-nav.css')?>" rel="stylesheet">
@@ -78,12 +78,12 @@
               <?php endif; ?>
               
                 <li class="menu nav-item">
-                  <a class="nav-link js-scroll-trigger" href="<?php echo base_url('home/listar_inscricoes/' . $this->session->dados_participante['id_participante']); ?>">Minhas_Inscrições</a>
+                  <a class="nav-link js-scroll-trigger" href="<?php echo base_url('home/listar_inscricoes/' . $this->session->dados_participante['id_participante']); ?>">Minhas Inscrições</a>
                 </li>
               
               
                 <li class="menu nav-item">
-                  <a class="nav-link js-scroll-trigger" href="<?php echo base_url('participante/exibir/' . $this->session->dados_participante['id_participante']); ?>">Meu_Perfil</a>
+                  <a class="nav-link js-scroll-trigger" href="<?php echo base_url('participante/exibir/' . $this->session->dados_participante['id_participante']); ?>">Meu Perfil</a>
                 </li>
              
               <li class="menu nav-item">
