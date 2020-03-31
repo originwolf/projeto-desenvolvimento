@@ -50,7 +50,7 @@ class Participante extends CI_Controller {
 	public function logout(){
 		$this->session->unset_userdata('dados_participante');
 		$dados['eventos'] =  $this->evento->recupera_eventos_publicados();
-		$dados['titulo'] = 'SISTEMA CONTROLADOR DE EVENTOS ACADÊMICOS';		
+		// $dados['titulo'] = 'IF EVENTOS';		
 		$dados['pagina'] = 'home';
 		
 		$this->load->view('home', $dados);	

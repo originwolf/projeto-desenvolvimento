@@ -14,7 +14,7 @@ class Home extends CI_Controller {
 	public function index(){	
 		$dados['eventos'] =  $this->evento->recupera_eventos_publicados();
 		$dados['pagina'] = 'home';
-		$dados['titulo'] = 'SISTEMA CONTROLADOR DE EVENTOS ACADÊMICOS';
+		// $dados['titulo'] = 'SISTEMA CONTROLADOR DE EVENTOS ACADÊMICOS';
 
 		$this->load->view('home', $dados);			
 	}

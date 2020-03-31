@@ -4,11 +4,11 @@
 //====================================================================================================
 case 'home': ?>
     <header class="cabecalho">
-      <div class="bg-titulo container text-center">
-        <h1 class="titulo"><?php echo $titulo ?></h1>
+      <div class="col-12 bg-titulo container text-center">
+        <img src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="">
         <?php $this->load->view('mensagem') ?>
       </div>
-    </header>  
+    </header>
     <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
     <section id="eventos"  class="bg-light">
        <div class="container">
