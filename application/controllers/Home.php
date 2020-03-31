@@ -11,11 +11,10 @@ class Home extends CI_Controller {
 		$this->load->model('chamada_model', 'chamada');
 	}
 	//====================================================================================================
-	public function index()
-	{	
+	public function index(){	
 		$dados['eventos'] =  $this->evento->recupera_eventos_publicados();
 		$dados['pagina'] = 'home';
-		$dados['titulo'] = 'IF EVENTOS';
+		$dados['titulo'] = 'SISTEMA CONTROLADOR DE EVENTOS ACADÊMICOS';
 
 		$this->load->view('home', $dados);			
 	}

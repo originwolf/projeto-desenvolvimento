@@ -20,9 +20,9 @@ td {
 
 .cabecalho{	
 	background-color: #dfdfdf;
-	background-image: url(../images/auditorio2.jpg);
-	background-repeat: no-repeat; 
-   	padding:  250px 0px;
+	background-image: url(../images/auditorio.jpg);
+	background-repeat: no-repeat;
+   	padding: 250px 0px;
    	background-attachment: fixed;
 }
 
