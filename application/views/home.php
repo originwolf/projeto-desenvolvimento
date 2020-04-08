@@ -5,8 +5,7 @@
 case 'home': ?>
     <header class="cabecalho">
       <div class="col-12 bg-titulo container text-center">
-        <img src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="">
-        <?php $this->load->view('mensagem') ?>
+        <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="Auditorio ifsuldeminas">
       </div>
     </header>
     <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
@@ -44,27 +43,25 @@ case 'home': ?>
             <?php endforeach; ?>                         
           </div>
         </div>                              
-        
     </section>
+
     <?php endif; ?>
-    <section id="sobre">
+
+    <section id="sobre row">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto"> 
-          <section id="SobreNos" class="row">
-          <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
-				<div class="col-md-5 text-center">
-						<img src="<?php echo base_url('/assets/images/logoSisconeve.jpg') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
-				</div>
-				<div class="col-md-7">
-        <h1 class="mt-4 mb-3 pl-4">SOBRE O SISCONEVE</h1>
-					<p class="text-justify col-12 pl-4">Este sistema foi projetado para atender as demandas dos eventos realizados dentro do IFSULDEMINAS - Campus Machado. 
-            A plataforma permite a automatização de processos que simplificam a forma de administrar todas as etapas do eventos. 
-            O SISCONEVE foi desenvolvido para facilitar a organização de inscrições, palestras, minicursos, workshops, cursos, entre outras 
-            atividades de eventos técnicos e científicos.</p>
-				</div>
-        <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>        
+        <div class="row mx-auto">
+          <div class="col-12 mb-3 linhaVerde"></div>
+          <div class="col-md-5 text-center">
+            <img src="<?php echo base_url('/assets/images/logoSisconeve.jpg') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
           </div>
+          <div class="col-md-7">
+            <h1 class="mt-4 mb-3 pl-4">SOBRE O SISCONEVE</h1>
+            <p class="text-justify col-12 pl-4">Este sistema foi projetado para atender as demandas dos eventos realizados dentro do IFSULDEMINAS - Campus Machado. 
+              A plataforma permite a automatização de processos que simplificam a forma de administrar todas as etapas do eventos. 
+              O SISCONEVE foi desenvolvido para facilitar a organização de inscrições, palestras, minicursos, workshops, cursos, entre outras 
+              atividades de eventos técnicos e científicos.</p>
+          </div>
+          <div class="col-12 mt-3 linhaVerde"></div>
         </div>
       </div>
     </section>
@@ -74,7 +71,7 @@ case 'home': ?>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 mx-auto">
-          <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
+          <div class="col-12 mb-3 linhaVerde"></div>
             <h2 class="text-center mb-5">ENTRE EM CONTATO</h2>
             
             <div class="row">
@@ -104,7 +101,7 @@ case 'home': ?>
               </div>
             </div>
             <p class="lead my-5">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato conosco, se possível com o(s) print(s) do(s) erro(s).</p>
-            <div class="col-12 mb-3" style="border-bottom: 10px solid rgb(34,139,34)"></div>
+            <div class="col-12 mb-3 linhaVerde"></div>
           </div>
         </div>
       </div>
