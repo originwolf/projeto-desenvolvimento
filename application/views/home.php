@@ -8,52 +8,14 @@ case 'home': ?>
         <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="Auditorio ifsuldeminas">
       </div>
     </header>
-    <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
-    <section id="eventos"  class="bg-light">
-       <div class="container">
-          <div class="row">
-            <div class="col-lg-12 mx-auto">
-              <h2 class="text-center mb-5">PRÓXIMOS EVENTOS</h2>             
-            </div>            
-              <?php foreach ($eventos as $evento): ?>       
-            <div class="card w-75 mx-auto mb-3 shadow">
-              <h5 class="card-header"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->evento ?></a></h5>
-              <div class="card-body">
-                <?php if(isset($evento->descricao) && $evento->descricao != ""): ?>
-                <div class="icone_campo form-group">
-                  <p><small><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-secondary"><?php echo mysql_texto($evento->descricao) ?></a></small></p>                
-                </div>
-                <?php endif; ?>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <p><small>Início: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_inicio)) ?></a></small></p>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <p><small>Término: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_termino)) ?></a></small></p>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <p><small>Área: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->area ?></a></small></p>
-                  </div>                  
-                </div>
-                <div>                  
-                   <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-primary shadow">Ver Atividades</a>
-                </div>                
-              </div>
-            </div>
-            <?php endforeach; ?>                         
-          </div>
-        </div>                              
-    </section>
 
-    <?php endif; ?>
-
-    <section id="sobre row">
+    <section id="sobre">
       <div class="container">
         <div class="row mx-auto">
           <div class="col-12 mb-3 linhaVerde"></div>
-          <div class="col-md-5 text-center">
-            <img src="<?php echo base_url('/assets/images/logoSisconeve.jpg') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
-          </div>
+            <div class="col-md-5 text-center">
+              <img src="<?php echo base_url('/assets/images/logoSisconeve.jpg') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
+            </div>
           <div class="col-md-7">
             <h1 class="mt-4 mb-3 pl-4">SOBRE O SISCONEVE</h1>
             <p class="text-justify col-12 pl-4">Este sistema foi projetado para atender as demandas dos eventos realizados dentro do IFSULDEMINAS - Campus Machado. 
@@ -65,9 +27,48 @@ case 'home': ?>
         </div>
       </div>
     </section>
-    
+
+    <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
+      <section id="eventos" class="bg-light">
+        <div class="container">
+          <div class="row">
+          <div class="col-12 mb-3 linhaVerde"></div>
+            <div class="col-lg-12 mx-auto">
+              <h2 class="text-center mb-5">PRÓXIMOS EVENTOS</h2>             
+            </div>            
+            <?php foreach ($eventos as $evento): ?>       
+              <div class="card w-75 mx-auto mb-3 shadow">
+                <h5 class="card-header"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->evento ?></a></h5>
+                <div class="card-body">
+                  <?php if(isset($evento->descricao) && $evento->descricao != ""): ?>
+                  <div class="icone_campo form-group">
+                    <p><small><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-secondary"><?php echo mysql_texto($evento->descricao) ?></a></small></p>                
+                  </div>
+                  <?php endif; ?>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <p><small>Início: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_inicio)) ?></a></small></p>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <p><small>Término: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_termino)) ?></a></small></p>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <p><small>Área: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->area ?></a></small></p>
+                    </div>                  
+                  </div>
+                  <div>                  
+                    <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-primary shadow">Ver Atividades</a>
+                  </div>                
+                </div>
+              </div>
+              <div class="col-12 mt-3 linhaVerde"></div>
+            <?php endforeach; ?>                         
+          </div>
+        </div>                              
+      </section>
+    <?php endif; ?>  
 			
-    <section id="contato" class="bg-light">
+    <section id="contato">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 mx-auto">
