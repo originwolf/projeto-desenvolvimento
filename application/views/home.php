@@ -6,6 +6,7 @@ case 'home': ?>
     <header class="cabecalho">
       <div class="col-12 bg-titulo">
         <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="Auditorio ifsuldeminas">
+        <img class="d-block d-md-none" src="<?php echo base_url('/assets/images/entradaif.jpeg')?>" alt="Banner">
       </div>
     </header>
 
