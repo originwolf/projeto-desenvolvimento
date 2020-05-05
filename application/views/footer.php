@@ -1,5 +1,5 @@
  <!-- Footer -->
- <footer class="py-5 bg-dark text-white">
+ <footer class="py-5 bg-verde text-white">
   <div class="container">
     <p class="m-0 text-center">Copyright &copy; SISCONEVE 2018</p>
 </div>     
