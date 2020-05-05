@@ -22,7 +22,7 @@
 <!--CABEÇALHO FIM-->
   <body id="topo-pagina">
     <!-- BARRA DE NAVEGAÇÃO -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-verde shadow fixed-top" id="mainNav">
       <div class="container">
         <strong><a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home');?>">IF EVENTOS</a></strong>
         <!-- MENU DE NAVEGAÇÃO RESPONSIVO INÍCIO-->
@@ -85,7 +85,7 @@
                 <li class="menu nav-item">
                   <a class="nav-link js-scroll-trigger" href="<?php echo base_url('participante/exibir/' . $this->session->dados_participante['id_participante']); ?>">Meu Perfil</a>
                 </li>
-             
+            
               <li class="menu nav-item">
                 <a class="nav-link js-scroll-trigger" href="<?php echo base_url('participante/logout'); ?>">Sair</a>
               </li>

@@ -14,8 +14,16 @@ td {
 	font-size: 14px;
 }
 
-.bg-cinza{	
+.bg-cinza {	
 	background-color: #dfdfdf;
+}
+
+.bg-verde {
+	background-color: #15832A;
+}
+
+#mainNav a {
+	color: #fff;
 }
 
 .cabecalho{	
