@@ -83,9 +83,9 @@ case 'home': ?>
                     Denis Antonio Rocha
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=5535988751516&text=Oi%20Denis%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 8875-1516</a></p>
-                    <p class="card-text"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;denisantoniorocha@gmail.com</p>
-                    <p class="card-text"><i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
+                    <p class="card-text"><i class="fab fa-whatsapp text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=5535988751516&text=Oi%20Denis%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 8875-1516</a></p>
+                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;denisantoniorocha@gmail.com</p>
+                    <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
                   </div>
                 </div>
               </div>
@@ -95,9 +95,9 @@ case 'home': ?>
                     Jéssica Alves de Lima Venâncio
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5535997473184&text=Oi%20J%C3%A9ssica%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 9747-3184</a></p>
-                    <p class="card-text"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;jlimavenancio@outlook.com</p>
-                    <p class="card-text"><i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                
+                    <p class="card-text"><i class="fab fa-whatsapp text-green"></i>&nbsp;&nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5535997473184&text=Oi%20J%C3%A9ssica%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 9747-3184</a></p>
+                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;jlimavenancio@outlook.com</p>
+                    <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                
                   </div>
                 </div>           
               </div>
