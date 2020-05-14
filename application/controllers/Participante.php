@@ -102,7 +102,7 @@ public function cadastrar(){
 				configura_mensagem('PARTICIPANTE cadastrado com sucesso.', 'sucesso');			
 				redirect('participante/listar', 'refresh');
 			else:			
-				configura_mensagem('PARTICIPANTE já pode se logar no sistema.', 'sucesso');			
+				configura_mensagem('PARTICIPANTE já pode se conectar no sistema.', 'sucesso');			
 				redirect('participante/login', 'refresh');
 			endif;		
 		else:		
@@ -220,7 +220,7 @@ public function excluir(){
 	if(($id = $this->uri->segment(3)) > 0):		
 		if($participante = $this->participante->recupera_participante($id)):		
 			$dados['participante'] = $participante;
-			configura_mensagem('Confirma a exclusão deste REGISTRO?', 'alerta');		
+			configura_mensagem('Confirmar a exclusão deste REGISTRO?', 'alerta');		
 		else:			
 			configura_mensagem('PARTICIPANTE inexistente.<br>Escolha um PARTICIPANTE para excluir.', 'falha');	
 			redirect('participante/listar', 'refresh');
@@ -381,7 +381,7 @@ public function valida_cpf($cpf) {
 	$cpf = str_pad($cpf, 11, '0', STR_PAD_LEFT);
 // Verifica se o numero de digitos informados é igual a 11 
 	if (strlen($cpf) != 11) {
-		$this->form_validation->set_message('valida_cpf', 'Dígitos no campo CPF não corresponde a um CPF. ' . $cpf);
+		$this->form_validation->set_message('valida_cpf', 'Dígitos no campo CPF não correspondem a um CPF. ' . $cpf);
 		return false;
 	}
 // Verifica se nenhuma das sequências invalidas abaixo 
@@ -396,7 +396,7 @@ public function valida_cpf($cpf) {
 		$cpf == '77777777777' || 
 		$cpf == '88888888888' || 
 		$cpf == '99999999999') {
-		$this->form_validation->set_message('valida_cpf', 'Dígitos no campo CPF não corresponde a um CPF válido.');
+		$this->form_validation->set_message('valida_cpf', 'Dígitos no campo CPF não correspondem a um CPF válido.');
 	return false;
  // Calcula os digitos verificadores para verificar se o
  // CPF é válido

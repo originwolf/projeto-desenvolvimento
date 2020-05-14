@@ -88,7 +88,7 @@ class Home extends CI_Controller {
 					$inscricao->atividade->agenda = $this->agenda->recupera_agenda_atividade($inscricao->atividade_id);
 				endforeach;					
 			else:
-				configura_mensagem('PARTICIPANTE inscrito em nenhuma ATIVIDADE.', 'alerta');
+				configura_mensagem('PARTICIPANTE não está inscrito em qualquer ATIVIDADE.', 'alerta');
 				//redirect('home', 'refresh');
 			endif;
 		else:

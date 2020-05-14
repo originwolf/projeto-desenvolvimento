@@ -23,7 +23,7 @@ class Inscricao extends CI_Controller {
 						if($inscricoes = $this->inscricao->recupera_inscricoes_atividade($atividade->id_atividade)):
 							$dados['inscricoes'] = $inscricoes;					
 						else:
-							configura_mensagem('Ainda ninguém INSCRITO nesta ATIVIDADE.', 'alerta');
+							configura_mensagem('Ninguém está INSCRITO nesta ATIVIDADE.', 'alerta');
 						endif;				
 					else:
 						configura_mensagem('ATIVIDADE desconhecida.</br>Escolha um EVENTO e uma ATIVIDADE para listar os INCRITOS.', 'falha');

@@ -124,7 +124,7 @@ class Categoria extends CI_Controller {
 		if(($id = $this->uri->segment(3)) > 0):			
 			if($categoria = $this->categoria->recupera_categoria($id)):				
 				$dados['categoria'] = $categoria;
-				configura_mensagem('Confirma a exclusão deste REGISTRO?', 'alerta');
+				configura_mensagem('Confirmar a exclusão deste REGISTRO?', 'alerta');
 			else:				
 				configura_mensagem('CATEGORIA inexistente.<br>Escolha uma CATEGORIA para excluir.', 'falha');
 				redirect('categoria/listar', 'refresh');

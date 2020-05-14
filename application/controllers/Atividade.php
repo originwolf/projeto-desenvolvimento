@@ -58,7 +58,7 @@ class Atividade extends CI_Controller {
 				redirect('evento/listar', 'refresh');
 			endif;		
 		else:			
-			configura_mensagem('Escolha um EVENTO para para cadastrar nova ATIVIDADE.', 'falha');			
+			configura_mensagem('Escolha um EVENTO para cadastrar uma nova ATIVIDADE.', 'falha');			
 			redirect('evento/listar', 'refresh');
 		endif;
 		
@@ -176,7 +176,7 @@ class Atividade extends CI_Controller {
 			if($atividade = $this->atividade->recupera_atividade($id)):				
 				$dados['atividade'] = $atividade;				
 				$dados['evento'] = $this->evento->recupera_evento($atividade->evento_id);
-				configura_mensagem('Confirma a exclusão deste REGISTRO?', 'alerta');							
+				configura_mensagem('Confirmar a exclusão deste REGISTRO?', 'alerta');							
 			else:					
 				configura_mensagem('ATIVIDADE inexistente.<br>Escolha uma ATIVIDADE para excluir.', 'falha');				
 				redirect('atividade/listar/' . $atividade->evento_id, 'refresh');

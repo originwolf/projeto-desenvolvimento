@@ -237,7 +237,7 @@ class Agenda extends CI_Controller {
 			if($evento = $this->evento->recupera_evento($id)):
 				$dados['id_evento'] = $evento->id_evento;
 				$dados['evento'] = $evento;
-				configura_mensagem('Confirma a exclusão deste REGISTRO?', 'alerta');											
+				configura_mensagem('Confirmar a exclusão deste REGISTRO?', 'alerta');											
 			else:					
 				configura_mensagem('EVENTO inexistente.</br>Escolha um EVENTO e uma ATIVIDADE para editar uma AGENDA.', 'falha');				
 				redirect('evento/listar', 'refresh');

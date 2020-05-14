@@ -24,7 +24,7 @@ class Area extends CI_Controller {
 		if(isset($dados['areas']) && sizeof($dados['areas']) > 0):			
 			$this->load->view('area', $dados);		
 		else:			
-			configura_mensagem("Ainda não há ÁREAS cadastradas.", 'alerta');			
+			configura_mensagem("Ainda não existem ÁREAS cadastradas.", 'alerta');			
 			$this->load->view('area', $dados);
 	endif;
 	}
@@ -125,7 +125,7 @@ class Area extends CI_Controller {
 		if(($id = $this->uri->segment(3)) > 0):			
 			if($area = $this->area->recupera_area($id)):				
 				$dados['area'] = $area;
-				configura_mensagem('Confirma a exclusão deste REGISTRO?', 'alerta');			
+				configura_mensagem('Confirmar a exclusão deste REGISTRO?', 'alerta');			
 			else:				
 				configura_mensagem('ÁREA inexistente.<br>Escolha uma ÁREA para excluir.', 'falha');				
 				redirect('area/listar', 'refresh');
