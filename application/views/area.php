@@ -7,7 +7,7 @@
      <div class="container">
       <div class="row">      
        <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-        <div class="border rounded my-3 shadow bg-primary text-white">
+        <div class="border rounded my-3 shadow bg-success text-white">
          <h5 class="text-center my-2"><?php echo $titulo ?></h5>
       </div>
       <?php $this->load->view('mensagem'); ?>
@@ -17,7 +17,7 @@
             <a href="<?php echo base_url('area/cadastrar/')?>" class="text-secondary">Nova Área</a>
           </div>
        <div class="container col-6 text-right py-1">
-          <div><a href="<?php echo base_url('area/cadastrar')?>" class="btn btn-primary btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
+          <div><a href="<?php echo base_url('area/cadastrar')?>" class="btn btn-success btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
           </div>
        </div>
     </div>
@@ -33,7 +33,7 @@
 <?php if(isset($areas) && sizeof($areas) > 0): ?>
 <div class="table-responsive-md"> 
    <table class="table rounded shadow" align="center" id="tabela">
-     <thead class="bg-primary text-white" align="center">
+     <thead class="bg-success text-white" align="center">
      <tr class="rotulo-tabela">
       <th class="text-left">Área&nbsp&nbsp&nbsp<small>{ <?php echo sizeof($areas) ?> registro(s) }</small></th>    
    </tr>   
@@ -49,7 +49,7 @@
 </div>
 <?php endif; ?>
 <div class="form-group pt-2 text-center">     
-  <a href="<?php echo base_url('home')?>" class="btn btn-secondary shadow botao">Voltar</a>
+  <a href="<?php echo base_url('home')?>" class="btn btn-danger shadow botao">Voltar</a>
 </div>
 </div>
 </div>
@@ -63,7 +63,7 @@
    <div class="container">
     <div class="row">
      <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-       <div class="border rounded my-3 shadow bg-primary text-white">
+       <div class="border rounded my-3 shadow bg-success text-white">
          <h5 class="text-center my-2"><?php echo $titulo ?></h5>
       </div>
       <?php $this->load->view('mensagem'); ?>
@@ -73,7 +73,7 @@
          <?php echo form_input('area', set_value('area'), array('autofocus' => 'autofocus', 'class' => 'form-control shadow', 'placeholder' => 'Digite a área')); ?><i class="fas fa-plus"></i>
       </div>
       <div class="form-group pt-3 text-center">         
-         <?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+         <?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
          <a href="<?php echo base_url('area/listar')?>" class="btn btn-danger shadow botao">Cancelar</a>
       </div>
       <?php echo form_close(); ?>
@@ -89,7 +89,7 @@
    <div class="container">
     <div class="row">
      <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-       <div class="border rounded my-3 shadow bg-primary text-white">
+       <div class="border rounded my-3 shadow bg-success text-white">
          <h5 class="text-center my-2"><?php echo $titulo ?></h5>
       </div>
       <?php $this->load->view('mensagem'); ?>
@@ -99,9 +99,9 @@
          <?php echo form_input('area',set_value('area', $area->area), array('class' => 'form-control shadow', 'readonly' => 'TRUE')); ?><i class="fas fa-edit"></i>
       </div>
       <div class="form-group pt-3 text-center">        
-        <a href="<?php echo base_url('area/editar/'  . $area->id_area) ?>" class="botao btn btn-primary shadow">Editar</a>     
-        <a href="<?php echo base_url('area/excluir/'  . $area->id_area) ?>" class=" botao btn btn-danger shadow">Excluir</a>
-        <a href="<?php echo base_url('area/listar')?>" class="btn btn-secondary shadow botao">Voltar</a>
+        <a href="<?php echo base_url('area/editar/'  . $area->id_area) ?>" class="botao btn btn-success shadow">Editar</a>     
+        <a href="<?php echo base_url('area/excluir/'  . $area->id_area) ?>" class=" botao btn btn-warning shadow">Excluir</a>
+        <a href="<?php echo base_url('area/listar')?>" class="btn btn-danger shadow botao">Voltar</a>
       </div>
       <?php echo form_close(); ?>
    </div>
@@ -116,7 +116,7 @@
    <div class="container">
     <div class="row">
      <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-       <div class="border rounded my-3 shadow bg-primary text-white">
+       <div class="border rounded my-3 shadow bg-success text-white">
          <h5 class="text-center my-2"><?php echo $titulo ?></h5>
       </div>
       <?php $this->load->view('mensagem'); ?>
@@ -127,7 +127,7 @@
          <?php echo form_input('area',set_value('area', $area->area), array('autofocus' => 'autofocus', 'class' => 'form-control shadow')); ?><i class="fas fa-edit"></i>
       </div>
       <div class="form-group pt-3 text-center">         
-         <?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+         <?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
          <a href="<?php echo base_url('area/exibir/'  . $area->id_area)?>" class="btn btn-danger shadow botao">Cancelar</a>
       </div>
       <?php echo form_close(); ?>
@@ -143,7 +143,7 @@
    <div class="container">
     <div class="row">
      <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-       <div class="border rounded my-3 shadow bg-primary text-white">
+       <div class="border rounded my-3 shadow bg-success text-white">
          <h5 class="text-center my-2"><?php echo $titulo ?></h5>
       </div>
       <?php $this->load->view('mensagem'); ?>
@@ -153,7 +153,7 @@
          <?php echo form_input('area',"$area->area", array('class' => 'form-control shadow', 'readonly' => 'TRUE')); ?><i class="fas fa-edit"></i>
       </div>
       <div class="form-group pt-3 text-center">         
-         <?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-primary shadow botao')); ?>
+         <?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-success shadow botao')); ?>
          <a href="<?php echo base_url('area/exibir/'  . $area->id_area)?>" class="btn btn-danger shadow botao">Cancelar</a>
       </div>
       <?php echo form_close(); ?>
