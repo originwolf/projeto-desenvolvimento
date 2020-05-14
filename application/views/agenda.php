@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-					<div class="border rounded my-3 shadow bg-primary text-white">
+					<div class="border rounded my-3 shadow bg-success text-white">
 						<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 					</div>
 					<div class="border rounded my-3 shadow bg-white">
@@ -26,7 +26,7 @@
 							</div>
 							<div class="container col-6 text-right py-1">
 								<div>
-									<a href="<?php echo base_url('agenda/cadastrar/') . $evento->id_evento . '/' . $atividade->id_atividade ?>" class="btn btn-primary btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
+									<a href="<?php echo base_url('agenda/cadastrar/') . $evento->id_evento . '/' . $atividade->id_atividade ?>" class="btn btn-success btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
 								</div>
 							</div>
 						</div>
@@ -34,7 +34,7 @@
 					<?php if(isset($agendas) && sizeof($agendas) > 0): ?>
 					<div class="table-responsive-md">
 						<table class="table rounded shadow" align="center" id="tabela">
-							<thead class="bg-primary text-white" align="center">
+							<thead class="bg-success text-white" align="center">
 								<tr class="rotulo-tabela">
 									<th class="text-left">Dia</th>
 									<th class="text-left">Início</th>
@@ -54,7 +54,7 @@
 					</div>
 				<?php endif; ?>
 			<div class="form-group pt-3 text-center">			
-				<a href="<?php echo base_url('atividade/listar/'.$evento->id_evento)?>" class="btn btn-secondary shadow botao">Voltar</a>
+				<a href="<?php echo base_url('atividade/listar/'.$evento->id_evento)?>" class="btn btn-danger shadow botao">Voltar</a>
 			</div>
 			<?php echo form_close(); ?>
 			</div>
@@ -68,7 +68,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -95,7 +95,7 @@
 				</div>				
 				</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('agenda/listar/'.$atividade->id_atividade)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>
