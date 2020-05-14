@@ -106,7 +106,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>				
 				<?php $this->load->view('mensagem'); ?>				
@@ -150,7 +150,7 @@
 				<?php echo form_password('confirmar_senha', '', array('class' => 'form-control shadow', 'placeholder' => 'Confirme a senha')); ?><i class="fa fa-key fa-lg fa-fw"></i>
 			</div>			
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('participante/listar')?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>			
@@ -165,7 +165,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>				
 				<?php $this->load->view('mensagem'); ?>				
@@ -202,19 +202,19 @@
 			</div>
 			<?php $acesso = $this->session->dados_participante['acesso']; ?>			
 			<div class="form-group pt-3 text-center">				
-				<a href="<?php echo base_url('participante/editar/') . $participante->id_participante ?>" class="botao btn btn-primary shadow">Editar</a>
+				<a href="<?php echo base_url('participante/editar/') . $participante->id_participante ?>" class="botao btn btn-success shadow">Editar</a>
 				<?php if(recupera_permissao($acesso, PARTICIPANTES)): ?>
-					<a href="<?php echo base_url('participante/excluir/') . $participante->id_participante ?>" class="botao btn btn-danger shadow">Excluir</a>
+					<a href="<?php echo base_url('participante/excluir/') . $participante->id_participante ?>" class="botao btn btn-warning shadow">Excluir</a>
 				<?php endif; ?>
 	            <?php if(recupera_permissao($acesso, PARTICIPANTES)): ?>
-					<a href="<?php echo base_url('participante/listar')?>" class="btn btn-secondary shadow botao">Voltar</a>
+					<a href="<?php echo base_url('participante/listar')?>" class="btn btn-danger shadow botao">Voltar</a>
 				<?php else: ?>
-					<a href="<?php echo base_url('home')?>" class="btn btn-secondary shadow botao">Voltar</a>
+					<a href="<?php echo base_url('home')?>" class="btn btn-danger shadow botao">Voltar</a>
 				<?php endif; ?>		
 			</div>
-			<div>
+			<div class="bg-success text-center rounded">
 				<?php if(recupera_permissao($acesso, PERMISSOES)): ?>
-	            	<a href="<?php echo base_url('participante/permitir/') . $participante->id_participante ?>" class="px-3">Permissões</a>
+	            	<a href="<?php echo base_url('participante/permitir/') . $participante->id_participante ?>" class="px-3 text-white">Permissões</a>
 	            <?php endif; ?>
 			</div>
 			<?php echo form_close(); ?>			
@@ -229,7 +229,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>				
 				<?php $this->load->view('mensagem'); ?>				
@@ -273,7 +273,7 @@
 				<?php echo form_password('confirmar_senha', '', array('class' => 'form-control shadow')); ?><i class="fa fa-key fa-lg fa-fw"></i>
 			</div>			
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('participante/exibir/' . $participante->id_participante)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>			
@@ -288,7 +288,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>				
 				<?php $this->load->view('mensagem'); ?>				
@@ -325,7 +325,7 @@
 				<?php echo form_input('telefone', set_value('telefone', $participante->telefone), array('class' => 'telefone form-control shadow', 'readonly' => 'TRUE')); ?><i class="fa fa-phone fa-lg fa-fw"></i>
 			</div>			
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('participante/exibir/' . $participante->id_participante)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>			
@@ -340,7 +340,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-md-6 mx-auto bg-light rounded shadow p-3">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>				
 				<?php $this->load->view('mensagem'); ?>
@@ -391,7 +391,7 @@
 					</div>
 				</div>				
 				<div class="form-group pt-3 text-center">         
-					<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+					<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 					<a href="<?php echo base_url('participante/listar/')?>" class="btn btn-danger shadow botao">Cancelar</a>
 				</div>
 				<?php echo form_close(); ?>								

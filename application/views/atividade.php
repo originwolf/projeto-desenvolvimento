@@ -112,7 +112,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -139,7 +139,7 @@
 				<?php echo form_textarea(array('name' => 'descricao', 'value' => set_value(mysql_texto('descricao')),'class' => 'editor_html form-control shadow', 'placeholder' => 'Descreva a atividade'));?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('atividade/listar/' . $evento->id_evento)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>
@@ -154,7 +154,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -181,20 +181,20 @@
 				<?php echo form_textarea(array('name' => 'descricao',  'value' => set_value(mysql_texto('descricao')), 'rows' => '3', 'class' => 'form-control shadow','readonly' => 'TRUE'));?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<a href="<?php echo base_url('atividade/editar/' . $atividade->id_atividade) ?>" class="botao btn btn-primary shadow">Editar</a>
-				<a href="<?php echo base_url('atividade/excluir/' . $atividade->id_atividade) ?>" class="botao btn btn-danger shadow">Excluir</a>
-				<a href="<?php echo base_url('atividade/listar/' . $evento->id_evento)?>" class="btn btn-secondary shadow botao">Voltar</a>
+				<a href="<?php echo base_url('atividade/editar/' . $atividade->id_atividade) ?>" class="botao btn btn-success shadow">Editar</a>
+				<a href="<?php echo base_url('atividade/excluir/' . $atividade->id_atividade) ?>" class="botao btn btn-warning shadow">Excluir</a>
+				<a href="<?php echo base_url('atividade/listar/' . $evento->id_evento)?>" class="btn btn-danger shadow botao">Voltar</a>
 			</div>
-			<div>
+			<div class="bg-success text-center rounded">
 				<?php $acesso = $this->session->dados_participante['acesso']; ?>
 				<?php if(recupera_permissao($acesso, AGENDA)): ?>
-					<a href="<?php echo base_url('agenda/listar/') . $atividade->id_atividade ?>" class="px-3">Agenda</a>
+					<a href="<?php echo base_url('agenda/listar/') . $atividade->id_atividade ?>" class="px-3 text-white">Agenda</a>
 				<?php endif; ?>
 				<?php if(recupera_permissao($acesso, INSCRICOES)): ?>
-					<a href="<?php echo base_url('inscricao/listar/') . $atividade->id_atividade ?>" class="px-3">Inscritos</a>
+					<a href="<?php echo base_url('inscricao/listar/') . $atividade->id_atividade ?>" class="px-3 text-white">Inscritos</a>
 				<?php endif; ?>
 				<?php if(recupera_permissao($acesso, CHAMADAS)): ?>
-					<a href="<?php echo base_url('chamada/listar/') . $atividade->id_atividade ?>" class="px-3">Chamada</a>
+					<a href="<?php echo base_url('chamada/listar/') . $atividade->id_atividade ?>" class="px-3 text-white">Chamada</a>
 				<?php endif; ?>				
 			</div>
 			<?php echo form_close(); ?>
@@ -209,7 +209,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -236,7 +236,7 @@
 				<?php echo form_textarea(array('name' => 'descricao',  'value' => set_value(mysql_texto('descricao')), 'rows' => '3', 'class' => 'editor_html form-control shadow'));?>		
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('atividade/exibir/' . $atividade->id_atividade)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>
@@ -251,7 +251,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -278,7 +278,7 @@
 				<?php echo form_textarea('descricao', mysql_texto(set_value('descricao', mysql_texto($atividade->descricao))), array('class' => 'form-control shadow','readonly' => 'TRUE'));?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('atividade/exibir/' . $atividade->id_atividade)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>

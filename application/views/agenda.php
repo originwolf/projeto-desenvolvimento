@@ -110,7 +110,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -136,9 +136,9 @@
 				</div>				
 				</div>
 			<div class="form-group pt-3 text-center">				
-				<a href="<?php echo base_url('agenda/editar/' . $evento->id_evento . '/' . $atividade->id_atividade . '/' . $agenda->id_agenda) ?>" class="botao btn btn-primary shadow">Editar</a>	
-				<a href="<?php echo base_url('agenda/excluir/' . $evento->id_evento . '/' . $atividade->id_atividade . '/' . $agenda->id_agenda) ?>" class="botao btn btn-danger shadow">Excluir</a>
-				<a href="<?php echo base_url('agenda/listar/'.$atividade->id_atividade)?>" class="btn btn-secondary shadow botao">Voltar</a>
+				<a href="<?php echo base_url('agenda/editar/' . $evento->id_evento . '/' . $atividade->id_atividade . '/' . $agenda->id_agenda) ?>" class="botao btn btn-success shadow">Editar</a>	
+				<a href="<?php echo base_url('agenda/excluir/' . $evento->id_evento . '/' . $atividade->id_atividade . '/' . $agenda->id_agenda) ?>" class="botao btn btn-warning shadow">Excluir</a>
+				<a href="<?php echo base_url('agenda/listar/'.$atividade->id_atividade)?>" class="btn btn-danger shadow botao">Voltar</a>
 				</div>			
 			<?php echo form_close(); ?>
 		</div>
@@ -193,7 +193,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -219,7 +219,7 @@
 				</div>				
 				</div>			
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('agenda/exibir/' . $evento->id_evento . '/' . $atividade->id_atividade . '/' . $agenda->id_agenda)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>

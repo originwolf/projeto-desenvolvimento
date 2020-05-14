@@ -324,7 +324,7 @@ public function permitir(){
 		endif;						
 
 		if($id = $this->participante->salvar($dados_update)):		
-			configura_mensagem('PERMISSÕES configurada com sucesso.', 'sucesso');		
+			configura_mensagem('PERMISSÕES configuradas com sucesso.', 'sucesso');		
 			redirect('participante/listar/', 'refresh');
 		else:		
 			configura_mensagem('Não foi possível configurar as permissões.', 'falha');

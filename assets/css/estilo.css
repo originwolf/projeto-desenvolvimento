@@ -88,7 +88,7 @@ td {
 }
 
 .icone_campo input:focus + i{
-	color:dodgerBlue;
+	color:rgb(34,139,34);
 }
 
 .icone_campo.icone_campo_bg i{

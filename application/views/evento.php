@@ -80,7 +80,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-			<div class="border rounded my-3 shadow bg-primary text-white">
+			<div class="border rounded my-3 shadow bg-success text-white">
 				<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 			</div>
 			<?php $this->load->view('mensagem'); ?>
@@ -114,7 +114,7 @@
 				<?php echo form_textarea(array('name' => 'descricao', 'value' => set_value('descricao'), 'rows' => '3', 'class' => 'editor_html form-control shadow', 'placeholder' => 'Descreva o evento'));?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('evento/listar')?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>
@@ -129,7 +129,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<?php $this->load->view('mensagem'); ?>
@@ -165,13 +165,13 @@
 			<div class="form-group pt-3 text-center">
 				<a href="<?php echo base_url('evento/publicar/') . $evento->id_evento ?>" class="botao btn btn-success shadow"><?php echo $evento->publicar == TRUE?  "Despublicar" : "Publicar"; ?></a>      
 				<a href="<?php echo base_url('evento/editar/') . $evento->id_evento ?>" class="botao btn btn-primary shadow">Editar</a>
-				<a href="<?php echo base_url('evento/excluir/') . $evento->id_evento ?>" class="botao btn btn-danger shadow">Excluir</a>
-				<a href="<?php echo base_url('evento/listar')?>" class="btn btn-secondary shadow botao">Voltar</a>
+				<a href="<?php echo base_url('evento/excluir/') . $evento->id_evento ?>" class="botao btn btn-warning shadow">Excluir</a>
+				<a href="<?php echo base_url('evento/listar')?>" class="btn btn-danger shadow botao">Voltar</a>
 			</div>
-			<div>
+			<div class="bg-success text-center rounded">
 				<?php $acesso = $this->session->dados_participante['acesso']; ?>
 				<?php if(recupera_permissao($acesso, ATIVIDADES)): ?>
-					<a href="<?php echo base_url('atividade/listar/') . $evento->id_evento ?>" class="px-3">Atividades</a>
+					<a href="<?php echo base_url('atividade/listar/') . $evento->id_evento ?>" class="px-3 text-white">Atividades</a>
 				<?php endif ?>				
 			</div>
 			<?php echo form_close(); ?>
@@ -186,7 +186,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<?php $this->load->view('mensagem'); ?>
@@ -220,7 +220,7 @@
 				<?php echo form_textarea(array('name' => 'descricao', 'value' => mysql_texto($evento->descricao), 'rows' => '3', 'class' => 'editor_html form-control shadow'));?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Salvar', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('evento/exibir/' . $evento->id_evento)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>
@@ -235,7 +235,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-4">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<?php $this->load->view('mensagem'); ?>
@@ -273,7 +273,7 @@
 				<?php echo form_label('Publicar', 'publicar', array('style' => 'color: #4e5057;')); ?>
 			</div>
 			<div class="form-group pt-3 text-center">         
-				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-primary shadow botao')); ?>
+				<?php echo form_submit('enviar', 'Excluir', array('class' => 'btn btn-success shadow botao')); ?>
 				<a href="<?php echo base_url('evento/exibir/' . $evento->id_evento)?>" class="btn btn-danger shadow botao">Cancelar</a>
 			</div>
 			<?php echo form_close(); ?>

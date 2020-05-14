@@ -39,7 +39,7 @@ case 'home': ?>
             </div>            
             <?php foreach ($eventos as $evento): ?>       
               <div class="card w-75 mx-auto mb-3 shadow">
-                <h5 class="card-header"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->evento ?></a></h5>
+                <h5 class="card-header bg-success"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-white"><?php echo $evento->evento ?></a></h5>
                 <div class="card-body">
                   <?php if(isset($evento->descricao) && $evento->descricao != ""): ?>
                   <div class="icone_campo form-group">
@@ -58,7 +58,7 @@ case 'home': ?>
                     </div>                  
                   </div>
                   <div>                  
-                    <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-primary shadow">Ver Atividades</a>
+                    <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-success shadow">Ver Atividades</a>
                   </div>                
                 </div>
               </div>
@@ -102,7 +102,7 @@ case 'home': ?>
                 </div>           
               </div>
             </div>
-            <p class="lead my-5">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato conosco, se possível com o(s) print(s) do(s) erro(s).</p>
+            <p class="lead my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato conosco, se possível com o(s) print(s) do(s) erro(s).</p>
             <div class="col-12 mb-3 linhaVerde"></div>
           </div>
         </div>
@@ -115,7 +115,7 @@ case 'home': ?>
     <div class="container">
       <div class="row">
         <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-          <div class="border rounded my-3 shadow bg-primary text-white">
+          <div class="border rounded my-3 shadow bg-success text-white">
             <h5 class="text-center my-2"><?php echo $titulo ?></h5>
           </div>
           <?php $this->load->view('mensagem'); ?>
@@ -155,7 +155,7 @@ case 'home': ?>
     <div class="container">
       <div class="row">
         <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-          <div class="border rounded my-3 shadow bg-primary text-white">
+          <div class="border rounded my-3 shadow bg-success text-white">
             <h5 class="text-center my-2"><?php echo $titulo ?></h5>
           </div>
           <div class="border rounded my-3 shadow bg-white">
@@ -195,12 +195,12 @@ case 'home': ?>
                   </div>                  
                 </div>
                 <?php if(isset($atividade->inscrito) && $atividade->inscrito == TRUE): ?>                  
-                  <div class="btn btn-success shadow botao">Inscrito</div>
-                  <a href="<?php echo base_url('home/desinscrever/' . $inscricao->participante_id . '/' . $inscricao->id_inscricao) ?>" class="btn btn-primary shadow botao">Desinscrever</a>
+                  <div class="btn btn-primary shadow botao">Inscrito</div>
+                  <a href="<?php echo base_url('home/desinscrever/' . $inscricao->participante_id . '/' . $inscricao->id_inscricao) ?>" class="btn btn-danger shadow botao">Desinscrever</a>
                 <?php else: ?>
                   <?php echo form_open('home/inscrever/' . $evento->id_evento . '/' . $atividade->id_atividade); ?>      
                     <div class="form-group">
-                      <?php echo form_submit('enviar', 'Inscrever-se', array('class' => 'btn btn-primary shadow botao')); ?>   
+                      <?php echo form_submit('enviar', 'Inscrever-se', array('class' => 'btn btn-success shadow botao')); ?>   
                       </div>
                     <?php echo form_close(); ?>
                 <?php endif; ?>
@@ -209,7 +209,7 @@ case 'home': ?>
             <?php endforeach; ?>          
             <?php endif; ?>           
             <div class="form-group pt-3 text-center">     
-              <a href="<?php echo base_url('home/listar_eventos')?>" class="btn btn-secondary shadow botao">Voltar</a>
+              <a href="<?php echo base_url('home/listar_eventos')?>" class="btn btn-danger shadow botao">Voltar</a>
             </div>
           </div>        
         </div>
@@ -223,14 +223,14 @@ case 'home': ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-                <div class="border rounded my-3 shadow bg-primary text-white">
+                <div class="border rounded my-3 shadow bg-success text-white">
                     <h5 class="text-center my-2"><?php echo $titulo ?></h5>
                 </div>
                 <?php $this->load->view('mensagem'); ?>
                 <?php if(isset($inscricoes) && sizeof($inscricoes) > 0): ?>
                 <?php foreach($inscricoes as $inscricao): ?>
                 <div class="card mb-3 shadow">
-                    <h5 class="card-header"> <?php echo $inscricao->atividade->atividade; ?></h5>
+                    <h5 class="card-header bg-success text-white"> <?php echo $inscricao->atividade->atividade; ?></h5>
                     <div class="card-body">                 
                         <div class="icone_campo form-group text-secondary">
                             <p><small><?php echo $inscricao->evento->evento; ?></small></p>              
@@ -246,7 +246,7 @@ case 'home': ?>
                                 </small></p>
                             </div>
                             <div class="form-group col-md-6 text-right">
-                                <a href="<?php echo base_url('home/desinscrever/' . $id_participante . '/' . $inscricao->id_inscricao) ?>" class="btn btn-primary shadow botao">Desinscrever</a>
+                                <a href="<?php echo base_url('home/desinscrever/' . $id_participante . '/' . $inscricao->id_inscricao) ?>" class="btn btn-danger shadow botao">Desinscrever</a>
                             </div>
                         </div>                 
                     </div>
@@ -264,7 +264,7 @@ case 'home': ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-                <div class="border rounded my-3 shadow bg-primary text-white">
+                <div class="border rounded my-3 shadow bg-success text-white">
                     <h5 class="text-center my-2"><?php echo $titulo ?></h5>
                 </div>
                 <?php $this->load->view('mensagem'); ?>               
@@ -290,7 +290,7 @@ case 'home': ?>
                 </div>
                 <?php echo form_open();?>
                 <div class="form-group pt-3 text-center">                  
-                    <?php echo form_submit('enviar', 'Desinscrever', array('class' => 'btn btn-primary shadow botao'));?>                
+                    <?php echo form_submit('enviar', 'Desinscrever', array('class' => 'btn btn-success shadow botao'));?>                
                     <a href="<?php echo base_url('home/listar_inscricoes/' . $id_participante) ?>" class="btn btn-danger shadow botao">Cancelar</a>
                 </div>
                 <?php echo form_close();?>              

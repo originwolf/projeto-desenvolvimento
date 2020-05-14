@@ -1,8 +1,9 @@
  <!-- Footer -->
  <footer class="py-5 bg-verde text-white">
-  <div class="container">
-    <p class="m-0 text-center">Copyright &copy; SISCONEVE 2018</p>
-</div>     
+  <div class="container text-center">
+    <a href="<?php echo base_url('home')?>" class="text-white">Copyright &copy; SISCONEVE 2018</a>
+    <!-- <p class="m-0 text-center">Copyright &copy; SISCONEVE 2018</p> -->
+  </div>     
 </footer>
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js')?>"></script>
