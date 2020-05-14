@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row">				
 				<div class="col-md-6 mx-auto bg-light rounded shadow p-4">
-					<div class="border rounded my-3 shadow bg-primary text-white">
+					<div class="border rounded my-3 shadow bg-success text-white">
 						<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 					</div>					
 					<?php $this->load->view('mensagem'); ?>					
@@ -22,7 +22,7 @@
 						<?php echo form_password('senha', '', array('class' => 'form-control shadow', 'placeholder' => 'Digite a senha')); ?><i class="fa fa-key fa-lg fa-fw"></i>
 					</div>					
 					<div class="form-group pt-3 text-center">					
-						<?php echo form_submit('enviar', 'Autenticar', array('class' => 'btn btn-primary shadow botao')); ?>
+						<?php echo form_submit('enviar', 'Autenticar', array('class' => 'btn btn-success shadow botao')); ?>
 						<a href="<?php echo base_url('home')?>" id="botao_grande" class="btn btn-danger shadow botao">Cancelar</a>
 					</div>
 					<?php echo form_close(); ?>									
