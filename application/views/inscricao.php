@@ -7,7 +7,7 @@ case 'listar': ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-				<div class="border rounded my-3 shadow bg-primary text-white">
+				<div class="border rounded my-3 shadow bg-success text-white">
 					<h5 class="text-center my-2"><?php echo $titulo ?></h5>
 				</div>
 				<div class="border rounded my-3 shadow bg-white">
@@ -28,7 +28,7 @@ case 'listar': ?>
 				<?php if(isset($inscricoes) && sizeof($inscricoes) > 0): ?>
 				    <div class="table-responsive-md">
 				        <table class="table rounded shadow" align="center" id="tabela">
-				            <thead class="bg-primary text-white" align="center">
+				            <thead class="bg-success text-white" align="center">
 				                <tr class="rotulo-tabela">
 				                    <th class="text-left">Participante&nbsp&nbsp&nbsp<small>{ <?php echo sizeof($inscricoes) ?> registro(s) }</small></th>
 				                    <th class="text-left">Categoria</th>	                   	                   
@@ -54,13 +54,15 @@ case 'listar': ?>
 			                </tbody>
 			            </table>			            
 			            <div class="form-group pt-3 text-center">
-			            	<a href="<?php echo base_url('atividade/listar/'.$atividade->evento_id)?>" class="btn btn-secondary shadow botao">Voltar</a>			            	
+			            	<a href="<?php echo base_url('atividade/listar/'.$atividade->evento_id)?>" class="btn btn-danger shadow botao">Voltar</a>			            	
 			            </div>
-			            <a href="<?php echo base_url('pdfchamada/pdf/'.$atividade->evento_id.'/'.$atividade->id_atividade)?>" class="">Lista de Chamada pdf</a>
+						<div class="text-center bg-success rounded my-2">
+							<a href="<?php echo base_url('pdfchamada/pdf/'.$atividade->evento_id.'/'.$atividade->id_atividade)?>" class="text-white">Lista de Chamada pdf</a>
+						</div>
 			        </div>
 			    <?php else: ?>
 			    	<div class="form-group pt-3 text-center">
-		            	<a href="<?php echo base_url('atividade/listar/'.$atividade->evento_id)?>" class="btn btn-secondary shadow botao">Voltar</a>		            	
+		            	<a href="<?php echo base_url('atividade/listar/'.$atividade->evento_id)?>" class="btn btn-danger shadow botao">Voltar</a>		            	
 		            </div>
 			    <?php endif; ?>
 			</div>
