@@ -6,7 +6,7 @@ case 'listar': ?>
   <div class="container">
     <div class="row">      
       <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-        <div class="border rounded my-3 shadow bg-primary text-white">
+        <div class="border rounded my-3 shadow bg-success text-white">
           <h5 class="text-center my-2"><?php echo $titulo ?></h5>
         </div>
         <div class="border rounded my-3 shadow bg-white">
@@ -28,7 +28,7 @@ case 'listar': ?>
         <?php $acesso = $this->session->dados_participante['acesso'];?>
         <div class="table-responsive-md"> 
           <table class="table rounded shadow" align="center" id="tabela">
-            <thead class="bg-primary text-white" align="center">
+            <thead class="bg-success text-white" align="center">
               <tr class="rotulo-tabela">
                 <th class="text-left">Chamada&nbsp&nbsp&nbsp<small>{ <?php echo sizeof($inscritos) ?> registro(s) }</small></br>Todos</th>
                 <?php foreach ($agenda as $data):
@@ -78,9 +78,11 @@ case 'listar': ?>
         </div>       
         <?php endif; ?>
         <div class="form-group pt-2 text-center">     
-          <a href="<?php echo base_url('atividade/listar/' . $evento->id_evento)?>" class="btn btn-secondary shadow botao">Voltar</a>
+          <a href="<?php echo base_url('atividade/listar/' . $evento->id_evento)?>" class="btn btn-danger shadow botao">Voltar</a>
         </div>
-        <a href="<?php echo base_url('xlsxcertificados/xlsx/'.$atividade->evento_id.'/'.$atividade->id_atividade)?>" class="">Lista participantes certificados xlsx</a>        
+        <div class="bg-success text-center rounded">
+          <a href="<?php echo base_url('xlsxcertificados/xlsx/'.$atividade->evento_id.'/'.$atividade->id_atividade)?>" class="text-white">Lista participantes certificados xlsx</a>
+        </div>        
       </div>      
     </div>
   </div>
