@@ -80,29 +80,30 @@ case 'home': ?>
               <div class="col-sm-6">
                 <div class="card mt-4 mb-4 shadow">
                   <div class="card-header">
-                    Denis Antonio Rocha
+                  Daniela Augusta Guimaraes Dias
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=5535988751516&text=Oi%20Denis%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 8875-1516</a></p>
-                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;denisantoniorocha@gmail.com</p>
-                    <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
-                  </div>
+                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp;Professora efetiva do Instituto Federal de Educação, 
+                    Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e atua como coordenadora do curso de Licenciatura em Computação também ofertado pelo IFSULDEMINAS - CAMPUS MACHADO.</p>
+                     <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;daniela.dias@ifsuldeminas.edu.br </p>
+                    <!--<p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
+                 --> </div> 
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="card mt-4 mb-4 shadow">
                   <div class="card-header">
-                    Jéssica Alves de Lima Venâncio
+                  Matheus Eloy Franco		
                   </div>
                   <div class="card-body">               
-                    <p class="card-text"><i class="fab fa-whatsapp text-green"></i>&nbsp;&nbsp;&nbsp; <a href="https://api.whatsapp.com/send?phone=5535997473184&text=Oi%20J%C3%A9ssica%2C%20estou%20enfrentando%20alguns%20problemas%20com%20o%20SISCONEVE%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" class="text-dark">(35) 9 9747-3184</a></p>
-                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;jlimavenancio@outlook.com</p>
-                    <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                
+                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas, campus Machado e coordenador do curso de Sistemas de Informação também ofertado no IFSULDEMINAS - CAMPUS MACHADO.</p>
+                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;matheus.franco@ifsuldeminas.edu.br	</p>
+                    <!-- <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                 -->
                   </div>
                 </div>           
               </div>
             </div>
-            <p class="lead my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato conosco, se possível com o(s) print(s) do(s) erro(s).</p>
+            <p class="lead my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato com o coordenador do seu curso ou com um dos professores citados a cima, se possível com o(s) print(s) do(s) erro(s).</p>
             <div class="col-12 mb-3 linhaVerde"></div>
           </div>
         </div>
