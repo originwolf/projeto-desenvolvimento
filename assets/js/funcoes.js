@@ -18,3 +18,81 @@ function filtrar_tabela() {
       } 
    }
 }
+
+var contador = 0
+
+function redefinir_fonte() {
+   document.getElementById("topo-pagina").style.fontSize = "medium"
+   contador = 0
+   localStorage.setItem('contador',0)
+}
+
+function aumentar_fonte() {
+   switch(contador){
+      case -3:
+         document.getElementById("topo-pagina").style.fontSize = "x-small"
+         contador++
+         localStorage.setItem('contador',-2)
+         break;
+      case -2:
+         document.getElementById("topo-pagina").style.fontSize = "small"
+         contador++
+         localStorage.setItem('contador',-1)
+         break;
+      case -1:
+         document.getElementById("topo-pagina").style.fontSize = "medium"
+         contador++
+         localStorage.setItem('contador',0)
+         break;
+      case 0:
+         document.getElementById("topo-pagina").style.fontSize = "large"
+         contador++
+         localStorage.setItem('contador',1)
+         break;
+      case 1:
+         document.getElementById("topo-pagina").style.fontSize = "x-large"
+         contador++
+         localStorage.setItem('contador',2)
+         break;
+      case 2:
+         document.getElementById("topo-pagina").style.fontSize = "xx-large"
+         contador++
+         localStorage.setItem('contador',3)
+         break;
+   }
+}
+
+function diminuir_fonte() {
+   switch(contador){
+      case -2:
+         document.getElementById("topo-pagina").style.fontSize = "xx-small"
+         contador--
+         localStorage.setItem('contador',-3)
+         break;
+      case -1:
+         document.getElementById("topo-pagina").style.fontSize = "x-small"
+         contador--
+         localStorage.setItem('contador',-2)
+         break;
+      case 0:
+         document.getElementById("topo-pagina").style.fontSize = "small"
+         contador--
+         localStorage.setItem('contador',-1)
+         break;
+      case 1:
+         document.getElementById("topo-pagina").style.fontSize = "medium"
+         contador--
+         localStorage.setItem('contador',0)
+         break;
+      case 2:
+         document.getElementById("topo-pagina").style.fontSize = "large"
+         contador--
+         localStorage.setItem('contador',1)
+         break;
+      case 3:
+         document.getElementById("topo-pagina").style.fontSize = "x-large"
+         contador--
+         localStorage.setItem('contador',2)
+         break;
+   }
+}

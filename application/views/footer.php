@@ -18,9 +18,6 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/funcoes.js')?>"></script>
 <script type="text/javascript">
 
-
-
-
   $(document).ready(function(){
     $('.cpf').mask('999.999.999-99');
     $('.celular').mask('(99) 9 9999-9999');

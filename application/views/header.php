@@ -25,6 +25,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-verde shadow fixed-top" id="mainNav">
       <div class="container">
         <strong><a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home');?>">IF EVENTOS</a></strong>
+        <div>
+          <button type="button" onclick="aumentar_fonte()" class="btn btn-outline-success"><span class="fas fa-plus"></span></button>
+          <button type="button" onclick="diminuir_fonte()" class="btn btn-outline-success"><span class="fas fa-minus"></span></button>
+          <button type="button" onclick="redefinir_fonte()" class="btn btn-outline-success"><span class="fas fa-redo-alt"></span></button>
+        </div>
         <!-- MENU DE NAVEGAÇÃO RESPONSIVO INÍCIO-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

@@ -79,7 +79,7 @@ case 'home': ?>
             <div class="row">
               <div class="col-sm-6">
                 <div class="card mt-4 mb-4 shadow">
-                  <div class="card-header">
+                  <div class="card-header bg-success text-white">
                   Daniela Augusta Guimaraes Dias
                   </div>
                   <div class="card-body">               
@@ -92,11 +92,11 @@ case 'home': ?>
               </div>
               <div class="col-sm-6">
                 <div class="card mt-4 mb-4 shadow">
-                  <div class="card-header">
+                  <div class="card-header bg-success text-white">
                   Matheus Eloy Franco		
                   </div>
                   <div class="card-body">               
-                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas, campus Machado e coordenador do curso de Sistemas de Informação, ofertado no mesmo Campus.</p>
+                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e coordenador do curso de Sistemas de Informação, ofertado no mesmo Campus.</p>
                     <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;matheus.franco@ifsuldeminas.edu.br	</p>
                     <!-- <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                 -->
                   </div>

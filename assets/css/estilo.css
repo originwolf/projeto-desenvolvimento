@@ -87,6 +87,12 @@ td {
 	transition:.3s;
 }
 
+.fa-plus,
+.fa-minus,
+.fa-redo-alt {
+	color: #FFF;
+}
+
 .icone_campo input:focus + i{
 	color:rgb(34,139,34);
 }
