@@ -9,9 +9,9 @@
 //====================================================================================================
 case 'home': ?>
   <header class="cabecalho">
-    <div class="col-12 bg-titulo">
+    <div>
       <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="Auditorio ifsuldeminas">
-      <img class="d-block d-md-none" src="<?php echo base_url('/assets/images/entradaif.jpeg')?>" alt="Banner">
+      <img class="img-fluid d-block d-md-none" src="<?php echo base_url('/assets/images/entradaif.jpeg')?>" alt="Entrada do ifsuldeminas">
     </div>
   </header>
 
