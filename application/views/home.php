@@ -84,7 +84,7 @@ case 'home': ?>
                   </div>
                   <div class="card-body">               
                     <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp;Professora efetiva do Instituto Federal de Educação, 
-                    Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e atua como coordenadora do curso de Licenciatura em Computação também ofertado pelo IFSULDEMINAS - CAMPUS MACHADO.</p>
+                    Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e atua como coordenadora do curso de Licenciatura em Computação ofertado pelo mesmo Campus.</p>
                      <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;daniela.dias@ifsuldeminas.edu.br </p>
                     <!--<p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
                  --> </div> 
@@ -96,14 +96,14 @@ case 'home': ?>
                   Matheus Eloy Franco		
                   </div>
                   <div class="card-body">               
-                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas, campus Machado e coordenador do curso de Sistemas de Informação também ofertado no IFSULDEMINAS - CAMPUS MACHADO.</p>
+                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas, campus Machado e coordenador do curso de Sistemas de Informação, ofertado no mesmo Campus.</p>
                     <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;matheus.franco@ifsuldeminas.edu.br	</p>
                     <!-- <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                 -->
                   </div>
                 </div>           
               </div>
             </div>
-            <p class="lead my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato com o coordenador do seu curso ou com um dos professores citados a cima, se possível com o(s) print(s) do(s) erro(s).</p>
+            <p class="lead my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato com o coordenador do seu curso ou com um dos professores citados acima, se possível com o(s) print(s) do(s) erro(s).</p>
             <div class="col-12 mb-3 linhaVerde"></div>
           </div>
         </div>
