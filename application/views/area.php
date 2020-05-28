@@ -1,34 +1,39 @@
-  <?php $this->load->view('header'); ?>
-  <?php switch($pagina):
-  //====================================================================================================
-    case 'listar': ?>
-    <?php if (defined('LISTAR_AREAS') == false) define('LISTAR_AREAS', 1);?>
-    <section id="listar" class="bg-cinza">
-     <div class="container">
-      <div class="row">      
-       <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
-        <div class="border rounded my-3 shadow bg-success text-white">
-         <h5 class="text-center my-2"><?php echo $titulo ?></h5>
+<?php $this->load->view('header'); ?>
+<script>
+   window.onload = function(){
+   carregar_fonte()
+   }
+</script>
+<?php switch($pagina):
+//====================================================================================================
+case 'listar': ?>
+<?php if (defined('LISTAR_AREAS') == false) define('LISTAR_AREAS', 1);?>
+<section id="listar" class="bg-cinza">
+<div class="container">
+<div class="row">      
+   <div class="col-md-12 mx-auto bg-light rounded shadow p-3">
+   <div class="border rounded my-3 shadow bg-success text-white">
+   <h5 class="text-center my-2"><?php echo $titulo ?></h5>
+</div>
+<?php $this->load->view('mensagem'); ?>
+<div class="container my-3 border bg-white rounded shadow">
+   <div class="row">
+      <div class="container col-6 text-left py-2">
+      <a href="<?php echo base_url('area/cadastrar/')?>" class="text-secondary">Nova Área</a>
       </div>
-      <?php $this->load->view('mensagem'); ?>
-      <div class="container my-3 border bg-white rounded shadow">
-        <div class="row">
-          <div class="container col-6 text-left py-2">
-            <a href="<?php echo base_url('area/cadastrar/')?>" class="text-secondary">Nova Área</a>
-          </div>
-       <div class="container col-6 text-right py-1">
-          <div><a href="<?php echo base_url('area/cadastrar')?>" class="btn btn-success btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
-          </div>
-       </div>
-    </div>
- </div>
- <div class="container my-3 border bg-white rounded shadow">
-   <div class="py-1">    
-     <div class="icone_campo form-group">
-       <label for="filtro" class="text-secondary">Filtrar Área</label>
-       <input type="text" class="form-control shadow" id="filtro" onkeyup="filtrar_tabela()" placeholder="Digite a area"><i class="fa fa-filter fa-lg fa-fw"></i>
-    </div>
- </div>
+   <div class="container col-6 text-right py-1">
+      <div><a href="<?php echo base_url('area/cadastrar')?>" class="btn btn-success btn-sm shadow"><i class="fas fa-plus-square"></i> Cadastrar</a>
+      </div>
+   </div>
+</div>
+</div>
+<div class="container my-3 border bg-white rounded shadow">
+<div class="py-1">    
+   <div class="icone_campo form-group">
+      <label for="filtro" class="text-secondary">Filtrar Área</label>
+      <input type="text" class="form-control shadow" id="filtro" onkeyup="filtrar_tabela()" placeholder="Digite a area"><i class="fa fa-filter fa-lg fa-fw"></i>
+   </div>
+</div>
 </div>
 <?php if(isset($areas) && sizeof($areas) > 0): ?>
 <div class="table-responsive-md"> 

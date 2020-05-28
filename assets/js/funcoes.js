@@ -96,3 +96,30 @@ function diminuir_fonte() {
          break;
    }
 }
+
+function carregar_fonte(){
+   var contadorFonte = localStorage.getItem('contador')
+   switch (contadorFonte) {
+      case '-3':
+         document.getElementById("topo-pagina").style.fontSize = "xx-small"
+         break;
+      case '-2':
+         document.getElementById("topo-pagina").style.fontSize = "x-small"
+         break;
+      case '-1':
+         document.getElementById("topo-pagina").style.fontSize = "small"
+         break;
+      case '0':
+         document.getElementById("topo-pagina").style.fontSize = "medium"
+         break;
+      case '1':
+         document.getElementById("topo-pagina").style.fontSize = "large"
+         break;
+      case '2':
+         document.getElementById("topo-pagina").style.fontSize = "x-large"
+         break;
+      case '3':
+         document.getElementById("topo-pagina").style.fontSize = "xx-large"
+         break;
+   }
+}

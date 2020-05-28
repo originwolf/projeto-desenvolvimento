@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Sistema Controlador de Eventos">
-    <meta name="author" content="Denis Antonio Rocha & Jéssica Alves venâncio">
+    <meta name="author" content="Denis Antonio Rocha & Jéssica Alves venâncio & Pedro Henrique Martins e Oliveira & Gabrielly de Lima Venâncio">
     <title>Sisconeve</title>
     <!--LINKS BOOSTRAP, JAVA SCRIPT E CSS-->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">  
@@ -15,7 +15,9 @@
     <link href="<?php echo base_url('assets/css/all.css')?>" rel="stylesheet"> 
     <link href="<?php echo base_url('assets/css/jquery-te-1.4.0.css')?>" rel="stylesheet">   
     <link href="<?php echo base_url('assets/css/estilo.css')?>" rel="stylesheet">
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="<?php echo base_url('assets/favicon/Sisconeve.svg')?>">
+    <!-- WEBFONT -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>

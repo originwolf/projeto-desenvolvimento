@@ -1,5 +1,10 @@
- <!-- Footer -->
- <footer class="py-5 bg-verde text-white">
+<!-- Footer -->
+<script>
+  window.onload = function(){
+    carregar_fonte()
+  }
+</script>
+<footer class="py-5 bg-verde text-white">
   <div class="container text-center">
     <a href="<?php echo base_url('home')?>" class="text-white">Copyright &copy; SISCONEVE 2018</a>
     <!-- <p class="m-0 text-center">Copyright &copy; SISCONEVE 2018</p> -->
