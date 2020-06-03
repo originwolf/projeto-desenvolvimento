@@ -10,8 +10,8 @@
 case 'home': ?>
   <header class="cabecalho">
     <div>
-      <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.jpg')?>" alt="Auditorio ifsuldeminas">
-      <img class="img-fluid d-block d-md-none" src="<?php echo base_url('/assets/images/entradaif.jpeg')?>" alt="Entrada do ifsuldeminas">
+      <img class="img-fluid d-none d-md-block" src="<?php echo base_url('/assets/images/auditorio.webp')?>" alt="Auditorio ifsuldeminas">
+      <img class="img-fluid d-block d-md-none" src="<?php echo base_url('/assets/images/entradaif.webp')?>" alt="Entrada do ifsuldeminas">
     </div>
   </header>
 
@@ -20,7 +20,7 @@ case 'home': ?>
       <div class="row mx-auto">
         <div class="col-12 mb-3 linhaVerde"></div>
           <div class="col-md-5 text-center">
-            <img src="<?php echo base_url('/assets/images/logoSisconeve.jpg') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
+            <img src="<?php echo base_url('/assets/images/logoSisconeve.webp') ?>" alt="Logo do ifsuldeminas" class="py-2" style="width:300; height:317px;">
           </div>
         <div class="col-md-7">
           <h1 class="mt-4 mb-3 pl-4">SOBRE O SISCONEVE</h1>
@@ -34,86 +34,85 @@ case 'home': ?>
     </div>
   </section>
 
-    <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
-      <section id="eventos" class="bg-light">
-        <div class="container">
-          <div class="row">
-          <div class="col-12 mb-3 linhaVerde"></div>
-            <div class="col-lg-12 mx-auto">
-              <h2 class="text-center mb-5">PRÓXIMOS EVENTOS</h2>             
-            </div>            
-            <?php foreach ($eventos as $evento): ?>       
-              <div class="card w-75 mx-auto mb-3 shadow">
-                <h5 class="card-header bg-success"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-white"><?php echo $evento->evento ?></a></h5>
-                <div class="card-body">
-                  <?php if(isset($evento->descricao) && $evento->descricao != ""): ?>
-                  <div class="icone_campo form-group">
-                    <p><small><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-secondary"><?php echo mysql_texto($evento->descricao) ?></a></small></p>                
-                  </div>
-                  <?php endif; ?>
-                  <div class="form-row">
-                    <div class="form-group col-md-4">
-                      <p><small>Início: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_inicio)) ?></a></small></p>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <p><small>Término: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_termino)) ?></a></small></p>
-                    </div>
-                    <div class="form-group col-md-4">
-                      <p><small>Área: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->area ?></a></small></p>
-                    </div>                  
-                  </div>
-                  <div>                  
-                    <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-success shadow">Ver Atividades</a>
-                  </div>                
-                </div>
-              </div>
-              <div class="col-12 mt-3 linhaVerde"></div>
-            <?php endforeach; ?>                         
-          </div>
-        </div>                              
-      </section>
-    <?php endif; ?>  
-			
-    <section id="contato">
+  <?php if(isset($eventos) && sizeof($eventos) > 0): ?>
+    <section id="eventos" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 mx-auto">
-          <div class="col-12 mb-3 linhaVerde"></div>
-            <h2 class="text-center mb-5">ENTRE EM CONTATO</h2>
-            
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card mt-4 mb-4 shadow">
-                  <div class="card-header bg-success text-white">
-                  Daniela Augusta Guimaraes Dias
-                  </div>
-                  <div class="card-body">               
-                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp;Professora efetiva do Instituto Federal de Educação, 
-                    Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e atua como coordenadora do curso de Licenciatura em Computação ofertado pelo mesmo Campus.</p>
-                     <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;daniela.dias@ifsuldeminas.edu.br </p>
-                    <!--<p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
-                 --> </div> 
+        <div class="col-12 mb-3 linhaVerde"></div>
+          <div class="col-lg-12 mx-auto">
+            <h2 class="text-center mb-5">PRÓXIMOS EVENTOS</h2>             
+          </div>            
+          <?php foreach ($eventos as $evento): ?>       
+            <div class="card w-75 mx-auto mb-3 shadow">
+              <h5 class="card-header bg-success"><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-white"><?php echo $evento->evento ?></a></h5>
+              <div class="card-body">
+                <?php if(isset($evento->descricao) && $evento->descricao != ""): ?>
+                <div class="icone_campo form-group">
+                  <p><small><a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-secondary"><?php echo mysql_texto($evento->descricao) ?></a></small></p>                
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card mt-4 mb-4 shadow">
-                  <div class="card-header bg-success text-white">
-                  Matheus Eloy Franco		
+                <?php endif; ?>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <p><small>Início: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_inicio)) ?></a></small></p>
                   </div>
-                  <div class="card-body">               
-                    <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e coordenador do curso de Sistemas de Informação, ofertado no mesmo Campus.</p>
-                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;matheus.franco@ifsuldeminas.edu.br	</p>
-                    <!-- <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                 -->
+                  <div class="form-group col-md-4">
+                    <p><small>Término: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo date('d/m/Y', strtotime($evento->data_termino)) ?></a></small></p>
                   </div>
-                </div>           
+                  <div class="form-group col-md-4">
+                    <p><small>Área: <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento) ?>" class="text-dark"><?php echo $evento->area ?></a></small></p>
+                  </div>                  
+                </div>
+                <div>                  
+                  <a href="<?php echo base_url('home/listar_atividades/' . $evento->id_evento)?>" class="btn btn-success shadow">Ver Atividades</a>
+                </div>                
               </div>
             </div>
-            <p class="my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato com o coordenador do seu curso ou com um dos professores citados acima, se possível com o(s) print(s) do(s) erro(s).</p>
-            <div class="col-12 mb-3 linhaVerde"></div>
+            <div class="col-12 mt-3 linhaVerde"></div>
+          <?php endforeach; ?>                         
+        </div>
+      </div>                              
+    </section>
+  <?php endif; ?>  
+			
+  <section id="contato">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mx-auto">
+        <div class="col-12 mb-3 linhaVerde"></div>
+          <h2 class="text-center mb-5">ENTRE EM CONTATO</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mt-4 mb-4 shadow">
+                <div class="card-header bg-success text-white">
+                Daniela Augusta Guimaraes Dias
+                </div>
+                <div class="card-body">               
+                  <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp;Professora efetiva do Instituto Federal de Educação, 
+                  Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e atua como coordenadora do curso de Licenciatura em Computação ofertado pelo mesmo Campus.</p>
+                    <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;daniela.dias@ifsuldeminas.edu.br </p>
+                  <!--<p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/denisantonio.rocha" class="text-dark">Denis Antonio Rocha</a></p>                
+                --> </div> 
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card mt-4 mb-4 shadow">
+                <div class="card-header bg-success text-white">
+                Matheus Eloy Franco		
+                </div>
+                <div class="card-body">               
+                  <p class="Text-justify"><i class=" text-green"></i>&nbsp;&nbsp;&nbsp; Professor efetivo de Ensino Técnico e Tecnólogo do Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais - Câmpus Machado e coordenador do curso de Sistemas de Informação, ofertado no mesmo Campus.</p>
+                  <p class="card-text"><i class="fas fa-envelope text-green"></i>&nbsp;&nbsp;&nbsp;matheus.franco@ifsuldeminas.edu.br	</p>
+                  <!-- <p class="card-text"><i class="fab fa-facebook text-green"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/jessica.venancio.399" class="text-dark">Jéssica Venancio</a></p>                 -->
+                </div>
+              </div>           
+            </div>
           </div>
+          <p class="my-5 text-justify">ATENÇÃO: O SISCONEVE está em desenvolvimento. Qualquer erro entre em contato com o coordenador do seu curso ou com um dos professores citados acima, se possível com o(s) print(s) do(s) erro(s).</p>
+          <div class="col-12 mb-3 linhaVerde"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 <?php break; ?>
 <!--//====================================================================================================-->
 <?php case 'listar_eventos': ?>
