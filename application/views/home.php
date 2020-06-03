@@ -38,7 +38,6 @@ case 'home': ?>
     <section id="eventos" class="bg-light">
       <div class="container">
         <div class="row">
-        <div class="col-12 mb-3 linhaVerde"></div>
           <div class="col-lg-12 mx-auto">
             <h2 class="text-center mb-5">PRÓXIMOS EVENTOS</h2>             
           </div>            
@@ -67,7 +66,6 @@ case 'home': ?>
                 </div>                
               </div>
             </div>
-            <div class="col-12 mt-3 linhaVerde"></div>
           <?php endforeach; ?>                         
         </div>
       </div>                              

@@ -106,3 +106,14 @@ td {
 	color:#fff;
 	background-color:dodgerBlue;
 }
+
+#sobre,
+#contato {
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+
+#eventos .container {
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
