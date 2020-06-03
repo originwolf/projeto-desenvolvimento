@@ -10,7 +10,7 @@
     <meta name="author" content="Denis Antonio Rocha & Jéssica Alves venâncio & Pedro Henrique Martins e Oliveira & Gabrielly de Lima Venâncio">
     <title>Sisconeve</title>
     <!--LINKS BOOSTRAP, JAVA SCRIPT E CSS-->
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
     <link href="<?php echo base_url('assets/css/scrolling-nav.css')?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/all.css')?>" rel="stylesheet"> 
     <link href="<?php echo base_url('assets/css/jquery-te-1.4.0.css')?>" rel="stylesheet">   
